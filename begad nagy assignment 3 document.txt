@@ -1,6 +1,6 @@
 1- Magic or Dunder Methods :
 
-Dunder methods oor magic methods are methods that start and ends with he double underscores.
+Dunder methods or magic methods are methods that start and ends with he double underscores.
 Because python depends on classes everything in python is either an object or class that has methods.
 EX:
 when you add two numbers using the + operator, internally, the __add__() method will be called.
