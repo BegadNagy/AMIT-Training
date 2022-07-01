@@ -1,0 +1,67 @@
+1- Magic or Dunder Methods :
+
+Dunder methods oor magic methods are methods that start and ends with he double underscores.
+Because python depends on classes everything in python is either an object or class that has methods.
+EX:
+when you add two numbers using the + operator, internally, the __add__() method will be called.
+and that add method is in class int and so on
+
+for example:
+>>> num=10
+>>> num + 5
+15
+>>> num.__add__(5)
+15
+
+
+
+
+
+2.1- *args:
+in python when we create a function that do something, we call this function and pass to it spicific number of parameters.
+if we pass more or less parametrs than the numbers that already spicified it will cause an error.
+To overcome this type of errors that will happen when we are unsure of the number of parameters that we will pass to function
+we use *args and **kwargs which allow us to pass the variable number of parameters to function.
+In the function, we should use an asterisk * before the parameter name to pass variable length arguments.
+The arguments are passed as a tuple and these passed arguments make tuple.
+inside the function with same name as the parameter excluding asterisk.
+             
+
+2.2- **kwargs:
+Python uses *args to pass variable-length non-keyword arguments to functions,
+however this cannot be used to pass keyword arguments. Python offers a solution for this issue called **kwargs 
+which enables us to pass the function variable-length keyword arguments.
+To indicate this kind of argument in the function, we use the double asterisk ** before the parameter name. 
+The arguments are supplied as a dictionary, and inside the function, 
+this create a dictionary with the same name as the parameter but without the double asterisk **
+
+
+3- Encapsulation:
+Encapsulation is the packing of data and functions that work on that data within a single object. 
+By doing so, you can hide the internal state of the object from the outside. 
+This is known as (information hiding).
+How to do this?
+By using private attributes
+Private attributes can be only accessible from the methods of the class. 
+In other words, they cannot be accessible from outside of the class.
+Python doesn’t have a concept of private attributes. In other words, 
+all attributes are accessible from the outside of a class.
+By convention, you can define a private attribute by prefixing a single underscore (_):
+
+_attribute
+If you prefix an attribute name with double underscores (__) like this:
+
+__attribute
+
+Python will automatically change the name of the __attribute to:
+
+_class__attribute
+This is called the name mangling in Python.
+By doing this, you cannot access the __attribute directly from the outside of a class like:
+
+instance.__attribute
+
+However, you still can access it using the _class__attribute name:
+
+instance._class__attribute
+(Examples in the notebook)
