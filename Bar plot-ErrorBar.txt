@@ -1,0 +1,7 @@
+1-Bar plot:
+1.1- Error Bar:
+error bars will give you a general idea of how precise a measurement is. 
+Error bars are useful to adevelopers because error bars show the confidence or precision in a set of measurements or calculated values. 
+Bar charts without error bars give the illusion that a measured or calculated value is known to high precision or high confidence.
+we can also calculate the standard deviation and make the length of the error bar represent it,
+so it's easier to compare the standard deviation of each
